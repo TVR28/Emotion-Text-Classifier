@@ -31,7 +31,7 @@ emotions_emoji_dict = {"anger":"😠","disgust":"🤮", "fear":"😨😱", "happ
 # Main Application
 def main(): 
 	st.title("Emotion Classifier App") 
-	menu = ["Home","Monitor","About"]
+	menu = ["Home","Monitor Usage","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
 	create_page_visited_table()
 	create_emotionclf_table()
@@ -76,7 +76,7 @@ def main():
 
 
 
-	elif choice == "Monitor":
+	elif choice == "Monitor Usage":
 		add_page_visited_details("Monitor",datetime.now())
 		st.subheader("Monitor App")
 
